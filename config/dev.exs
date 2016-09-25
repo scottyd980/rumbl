@@ -37,7 +37,7 @@ config :phoenix, :stacktrace_depth, 20
 config :rumbl, Rumbl.Repo,
   adapter: Ecto.Adapters.MySQL,
   username: "root",
-  password: "password",
+  password: "",
   database: "rumbl_dev",
   hostname: "localhost",
   pool_size: 10
