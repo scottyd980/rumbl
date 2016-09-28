@@ -36,6 +36,7 @@ let Video = {
     });
 
     vidChannel.on("new_annotation", (resp) => {
+      vidChannel.params.last_seen_id = resp.id;
       this.renderAnnotation(msgContainer, resp);
     });
 
